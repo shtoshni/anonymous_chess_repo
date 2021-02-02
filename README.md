@@ -1,4 +1,4 @@
-# Chess as a testbed for evaluating language models on world state tracking.
+# Chess as a Testbed for Language Model State Tracking
 
 ## Setup
 Step 1
