@@ -31,7 +31,7 @@ export PYTHONPATH=${PWD}:${PYTHONPATH}
 
 ## Data Preparation
 
-The processed data is available [here](https://drive.google.com/file/d/1G4TA4KVdn5mLvMXsRI2bGC7VIdzqkr86/view?usp=sharing).
+The processed data is available [here](https://bit.ly/2YBTMer).
 UCI-based language models can be trained using just this data.
 To train models which require piecetype/board state, extract this additional information via steps described [below](#additional-board-state).
 
