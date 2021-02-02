@@ -11,10 +11,12 @@ Step 2: Install packages. The following are the core pacakage which can be separ
 ```
 chess==1.3.0
 pytorch-lightning==0.9.0
-torch==1.7.0.dev20200719
-transformers==3.1.0
+torch==1.7.1
+transformers==4.2.2
 prettytable==0.7.2
 ```
+
+For experiments with Performer, install `performer-pytorch`
 
 Or just do:
 ```
