@@ -31,12 +31,6 @@ export PYTHONPATH=${PWD}:${PYTHONPATH}
 
 ## Data Preparation
 
-The processed data is available [here](https://bit.ly/2YBTMer).
-UCI-based language models can be trained using just this data.
-To train models which require piecetype/board state, extract this additional information via steps described [below](#additional-board-state).
-
-Next we described the steps used processing the data.
-
 - Data can be downloaded from [rebel](http://rebel13.nl/dl.html?file=dl/MillionBase%202.5%20(PGN).7z). <br/>
 
 - Parse PGN to get data in UCI annotation (max_games to extract can be specified)
@@ -110,19 +104,7 @@ python main.py --data_dir $DATA_DIR
 ```
 UCI + RAP
 ```
-python main.py --rap_prob 0.15 --data_dir $DATA_DIR
-# To use the loss from predicting piecetypes in the sequence
 python main.py --rap_prob 0.15 --rap_grad --data_dir $DATA_DIR
-```
-Multi-view
-```
-python main.py --multiview --multiview_margin 0.6 --data_dir $DATA_DIR
-```
-Oracle
-```
-python main.py --oracle --data_dir $DATA_DIR
-# To use the loss from predicting piecetypes in the sequence
-python main.py --oracle --rap_grad --data_dir $DATA_DIR
 ```
 Custom training size, number of layers, context size, and other model configurations can be specified as follows:
 ```
