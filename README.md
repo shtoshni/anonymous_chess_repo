@@ -4,7 +4,7 @@
 Step 1
 ```
 git clone REPO
-cd learning-chess-blindfolded/
+cd REPO_ROOT/
 ```
 
 Step 2: Install packages. The following are the core pacakage which can be separately installed.
